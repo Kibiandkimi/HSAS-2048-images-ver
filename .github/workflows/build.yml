@@ -24,7 +24,7 @@ jobs:
       uses: actions/upload-artifact@v4.4.3
       with:
         name: rust-wps-powerpoint-auto-select.exe
-        path: ./sru-tauri/target/release/bundle/*/test-3*.*
+        path: ./src-tauri/target/release/bundle/*/test-3*.*
  
   build-on-windows:
    
@@ -41,5 +41,5 @@ jobs:
       uses: actions/upload-artifact@v4.4.3
       with:
         name: rust-wps-powerpoint-auto-select.exe
-        path: ./sru-tauri/target/release/bundle/*/test-3*.*
+        path: ./src-tauri/target/release/bundle/*/test-3*.*
    
