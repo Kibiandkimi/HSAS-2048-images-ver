@@ -97,10 +97,10 @@ jobs:
 
     - name: build
       run: |
-        cargo install tauri-cli --version "^2.0.0" --features mobile
+        cargo install tauri-cli
         cargo tauri android init
         rustup target add aarch64-linux-android armv7-linux-androideabi i686-linux-android x86_64-linux-android
-        cargo tauri android build
+        cargo tauri android build --release
         
 
     - name: npm-install
